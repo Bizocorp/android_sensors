@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:id="@+id/trFirst"
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvLongitudeTitle"
+            android:text="@string/longitude"
+            android:textSize="22dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/tvLongitude"
+            android:textSize="22dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_margin="20dp"
+
+        android:id="@+id/trSecond"
+        android:layout_below="@id/trFirst"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="22dp"
+            android:id="@+id/tvLatitudeTitle"
+            android:text="@string/latitude"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:textSize="22dp"
+            android:id="@+id/tvLatitude"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_margin="20dp"
+        android:id="@+id/trThird"
+        android:layout_below="@id/trSecond"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="22dp"
+            android:id="@+id/tvProviderTitle"
+            android:text="@string/provider"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:textSize="22dp"
+            android:id="@+id/tvProvider"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_margin="20dp"
+        android:id="@+id/trFourth"
+        android:layout_below="@id/trThird"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="22dp"
+            android:id="@+id/tvAccuracyTitle"
+            android:text="@string/accuracy"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:textSize="22dp"
+            android:id="@+id/tvAccuracy"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_margin="20dp"
+        android:id="@+id/trFive"
+        android:layout_below="@id/trFourth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="22dp"
+            android:id="@+id/tvProvidersEnabledTitle"
+            android:text="@string/providers"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:textSize="22dp"
+            android:id="@+id/tvProvidersEnabled"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+
+    </TableRow>
+
+    <Button
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btLocationText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
