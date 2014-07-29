@@ -15,6 +15,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import hr.ahuskano.sensors.app.fragments.FragmentLocation;
+import hr.ahuskano.sensors.app.fragments.FragmentTest;
+import hr.ahuskano.sensors.app.fragments.FragmentTrackLocation;
 
 
 public class MainActivity extends ActionBarActivity
@@ -58,14 +60,14 @@ public class MainActivity extends ActionBarActivity
                 break;
             case 1:
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                        .replace(R.id.container, new FragmentTrackLocation())
                         .commit();
                 Log.d("fragment_debug", "position: 2");
                 break;
             case 2:
                 Log.d("fragment_debug", "position: 3");
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                        .replace(R.id.container, new FragmentTest())
                         .commit();
                 break;
         }
