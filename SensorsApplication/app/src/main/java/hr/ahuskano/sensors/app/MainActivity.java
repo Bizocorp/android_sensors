@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import hr.ahuskano.sensors.app.fragments.FragmentLocation;
+import hr.ahuskano.sensors.app.fragments.FragmentAccelometerSpeak;
 import hr.ahuskano.sensors.app.fragments.FragmentTest;
 import hr.ahuskano.sensors.app.fragments.FragmentTrackLocation;
 
@@ -56,16 +57,18 @@ public class MainActivity extends ActionBarActivity
                 fragmentManager.beginTransaction()
                         .replace(R.id.container, new FragmentLocation())
                         .commit();
-                Log.d("fragment_debug", "position: 1");
                 break;
             case 1:
                 fragmentManager.beginTransaction()
                         .replace(R.id.container, new FragmentTrackLocation())
                         .commit();
-                Log.d("fragment_debug", "position: 2");
                 break;
             case 2:
-                Log.d("fragment_debug", "position: 3");
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, new FragmentAccelometerSpeak())
+                        .commit();
+                break;
+            case 3:
                 fragmentManager.beginTransaction()
                         .replace(R.id.container, new FragmentTest())
                         .commit();
@@ -85,6 +88,10 @@ public class MainActivity extends ActionBarActivity
             case 3:
                 mTitle = getString(R.string.title_section3);
                 break;
+            case 4:
+                mTitle = getString(R.string.title_section4);
+                break;
+
         }
     }
 
